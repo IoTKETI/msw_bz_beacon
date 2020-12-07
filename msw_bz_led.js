@@ -51,8 +51,8 @@ catch (e) {
     add_lib = {
         name: 'msw_bz_led',
         target: 'armv6',
-        description: "[name] [gpio_id]",
-        scripts: './lib_bz_led 1',
+        description: "[name] [config_file.json]",
+        scripts: './lib_bz_led lib_bz_led.json',
 		data: ['State'],
         control: ['Control_Green', 'Control_Red', 'Control_Alarm']
     };
