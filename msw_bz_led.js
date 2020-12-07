@@ -52,7 +52,7 @@ catch (e) {
         name: 'lib_bz_led',
         target: 'armv6',
         description: "[name]",
-        scripts: './lib_bz_beacon ./' + config.directory_name,
+        scripts: './lib_bz_beacon',
 		data: ['State'],
         control: ['Control_Green', 'Control_Red', 'Control_Alarm']
     };
