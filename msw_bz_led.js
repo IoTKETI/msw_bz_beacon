@@ -52,7 +52,7 @@ catch (e) {
         name: 'msw_bz_led',
         target: 'armv6',
         description: "[name] [config_file.json]",
-        scripts: './lib_bz_led lib_bz_led.json',
+        scripts: './lib_bz_led' + './' + config.directory_name + 'lib_bz_led.json',
 		data: ['State'],
         control: ['Control_Green', 'Control_Red', 'Control_Alarm']
     };
