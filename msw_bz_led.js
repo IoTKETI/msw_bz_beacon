@@ -53,8 +53,8 @@ catch (e) {
         target: 'armv6',
         description: "[name] [gpio_id]",
         scripts: './lib_bz_led 1',
-		data: ['LED'],
-        control: ['Control_ONOFF']
+		data: ['State'],
+        control: ['Control_Green', 'Control_Red', 'Control_Alarm']
     };
     config.lib.push(add_lib);
 }
