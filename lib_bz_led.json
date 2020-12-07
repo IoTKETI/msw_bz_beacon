@@ -2,15 +2,15 @@
 	"name"			: "lib_bz_led",
 	"target"		: "armv6",
 	"description"	: "[name]",
-	"scripts"		: "./lib_bz_beacon " + config.directory_name,	// "./lib_bz_led",
+	"scripts"		: "./lib_bz_beacon",						// "./lib_bz_led",
 	"data"			:
 					[
-					  "State"										// {"LED_Green": "ON/OFF", "LED_Red": "ON/OFF", "Alarm": "ON/OFF"}
+					  "State"									// {"LED_Green": "ON/OFF", "LED_Red": "ON/OFF", "Alarm": "ON/OFF"}
 					],						
 	"control"		:
 					[
-					  "Control_Green",								// Control_Green	= ON / OFF
-					  "Control_Red", 								// Control_Red		= ON / OFF 
-					  "Control_Alarm"								// Control_Alarm	= ON / OFF 
+					  "Control_Green",							// Control_Green	= ON / OFF
+					  "Control_Red", 							// Control_Red		= ON / OFF 
+					  "Control_Alarm"							// Control_Alarm	= ON / OFF 
 					]
 }
