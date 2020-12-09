@@ -45,20 +45,16 @@ catch (e) {
 var add_lib = {};
 try {
     add_lib = JSON.parse(fs.readFileSync('./' + config.directory_name + '/lib_bz_beacon.json', 'utf8'));
-	console.log('beacon!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
-
     config.lib.push(add_lib);
 }
 catch (e) {
-	console.log('beacon fffffffffff');
-
     add_lib = {
         name: 'lib_bz_beacon',
         target: 'armv6',
         description: "[name]",
         scripts: './lib_bz_beacon',
-		data: ['State'],
-        control: ['Control_Green', 'Control_Red', 'Control_Alarm']
+		data: ['State'],												// {"LED_Green": "ON/OFF", "LED_Red": "ON/OFF", "Alarm": "ON/OFF"}
+        control: ['Control_Green', 'Control_Red', 'Control_Alarm']		// {"Control_Green": "ON/OFF", "Control_Red": "ON/OFF", "Control_Alarm": "ON/OFF"}
     };
     config.lib.push(add_lib);
 }
