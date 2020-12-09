@@ -44,6 +44,7 @@ catch (e) {
 // library 추가
 var add_lib = {};
 try {
+	console.log('beacon1111111111111');
     add_lib = JSON.parse(fs.readFileSync('./' + config.directory_name + '/lib_bz_beacon.json', 'utf8'));
 	console.log('beacon!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
 
