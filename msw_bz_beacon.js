@@ -45,9 +45,13 @@ catch (e) {
 var add_lib = {};
 try {
     add_lib = JSON.parse(fs.readFileSync('./' + config.directory_name + '/lib_bz_beacon.json', 'utf8'));
+	console.log('beacon!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
+
     config.lib.push(add_lib);
 }
 catch (e) {
+	console.log('beacon fffffffffff');
+
     add_lib = {
         name: 'lib_bz_beacon',
         target: 'armv6',
