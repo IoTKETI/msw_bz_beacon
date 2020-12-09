@@ -3,6 +3,6 @@
     "target"        : "armv6",
     "description"   : "[name]",
     "scripts"       : "./lib_bz_beacon",
-    "data"          : ["State"],
-    "control"       : ["Control_Green", "Control_Red", "Control_Alarm"]
+    "data"          : ["BEACON"],
+    "control"       : ["Beacon_Ctrl_Green", "Beacon_Ctrl_Red", "Beacon_Ctrl_Alarm"]
 }
