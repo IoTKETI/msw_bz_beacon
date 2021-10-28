@@ -53,8 +53,8 @@ catch (e) {
         target: 'armv6',
         description: "[name]",
         scripts: './lib_bz_beacon',
-		data: ['State'],												// {"LED_Green": "ON/OFF", "LED_Red": "ON/OFF", "Alarm": "ON/OFF"}
-        control: ['Control_Green', 'Control_Red', 'Control_Alarm']		// {"Control_Green": "ON/OFF", "Control_Red": "ON/OFF", "Control_Alarm": "ON/OFF"}
+		data: ["State"],												// {"LED_Green": "ON/OFF", "LED_Red": "ON/OFF", "Alarm": "ON/OFF"}
+        control: ["Control_Green", "Control_Red", "Control_Alarm"]		// {"Control_Green": "ON/OFF", "Control_Red": "ON/OFF", "Control_Alarm": "ON/OFF"}
     };
     config.lib.push(add_lib);
 }
